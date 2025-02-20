@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+  <script>
+    const imageSource = 'https://via.placeholder.com/150'; // Or any valid image URL
+    document.getElementById("myDiv").innerHTML = `<p>This is a paragraph.</p><img src='${imageSource}' alt='Example Image'>`;
+  </script>
+</body>
+</html>
